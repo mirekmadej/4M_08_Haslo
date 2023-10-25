@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_4M__8_Haslo.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            >
+            <Label
+                Text="Hasło:"
+                FontSize="24"
+                HorizontalOptions="Center" />
+            <HorizontalStackLayout Spacing="5">
+                <CheckBox
+                    x:Name="chkMaleLit"
+                    IsChecked="True" />
+                <Label
+                    Text="małe litery" 
+                    VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="5">
+                <CheckBox
+                    x:Name="chkDuzeLit"
+                     />
+                <Label
+                    Text="duże litery" 
+                    VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="5">
+                <CheckBox
+                    x:Name="chkCyfry"
+                     />
+                <Label
+                    Text="cyfry" 
+                    VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Spacing="5">
+                <CheckBox
+                    x:Name="chkZnakiSpec"
+                     />
+                <Label
+                    Text="znaki specjalne" 
+                    VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Entry
+                    Text="10"
+                    x:Name="entDlugosc"
+                    Keyboard="Numeric"
+                    />
+            </HorizontalStackLayout>
+
+            <Button
+                Text="Generuj"
+                Clicked="btnGenerujClicked" 
+                HorizontalOptions="Center"
+            />
+            <Label
+                Text ="Twoje hasło:"
+                x:Name="lblhaslo"
+                />
+        </VerticalStackLayout>
+
+        
+    </ScrollView>
+
+</ContentPage>
